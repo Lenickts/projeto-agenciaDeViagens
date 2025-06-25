@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Telex&display=swap&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Josefin / Rubik Wet / Telex / Gloria Hallelujah / Roboto Mono */
+
+:root {
+    --fonte-titulo: "Rubik Wet Paint", system-ui;
+    --fonte-main: 'Telex';
+    --fonte-sec: "Josefin Sans", sans-serif;
+    --fonte-robo: "Roboto Mono", monospace;
+    --fonte-Generic: "Montserrat", sans-serif;
+    --shadow: 3px 3px 7px 7px #2F4F4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* nav, main, footer */
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff; /* Adicionei cor de fundo para melhor visualização */
+}
+    .nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+        padding: 5px;
+    }
+
+.main-container {
+    grid-area: main;
+    background-color: #F8F8FF;
+    padding: 20px; /* Adicionado padding para melhor espaçamento */
+}
+
+#testimonials {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+    #testimonials h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    }
+    .testimonial {
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    }
+    .testimonial p {
+    margin: 5px 0;
+    }
+    .testimonial strong {
+    font-weight: bold;
+    }
+    .testimonial em {
+    display: block;
+    margin-bottom: 8px;
+    }
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #333; /* Adicionei cor de fundo */
+    color: white; /* Cor do texto para contraste */
+}
+    footer ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+        padding: 5px;
+    }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav, footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .nav ul, footer ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
