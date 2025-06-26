@@ -32,7 +32,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #fff; /* Adicionei cor de fundo para melhor visualização */
+    background-color: #fff;
+    font-family: var(--fonte-Generic);
+    font-size: 20px;
 }
     .logo{
         border-radius: 50px;
@@ -42,13 +44,44 @@ body {
         display: flex;
         gap: 30px;
         padding: 5px;
+        align-items: center;
     }
 
 .main-container {
     grid-area: main;
     background-color: #F8F8FF;
-    padding: 20px; /* Adicionado padding para melhor espaçamento */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
+    .container-section{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+        .container-section ul{
+            padding-left: 50px;
+        }
+    .container-section-table{
+        padding: 20px;
+    }
+    table{
+        border-collapse: collapse;
+        border: 2px solid #2b2b2b;
+        letter-spacing: 1px;
+        font-family: var(--fonte-main);
+        font-size: 0.9rem;
+    }
+        .tabela-cabecalho{
+            background-color: #2b2b2b;
+            color: white;
+        }
+        th,td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+        }
 
 #testimonials {
   background-color: #2b2b2b;
