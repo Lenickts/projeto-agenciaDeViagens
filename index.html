@@ -8,7 +8,10 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="logo">Adicionar imagem</div>
+        <div class="logo">
+            <img src="img/logo-transparency.png" alt="Logo da empresa"
+                width="90px">
+        </div>
         <ul>
             <li>Home</li>
             <li>About</li>
@@ -91,15 +94,41 @@
             </div>
         </section>     
         <section class="container-section">
-            <h2>📩 Fale Conosco</h2>
-            <p>Quer planejar sua próxima aventura? Entre em contato agora mesmo!</p>
-            <p>📞 (11) 1234-5678</p>
-            <p>📧 contato@venturehorizon.com.br</p>
-            <p>📍 São Paulo, Rio de Janeiro, Belo Horizonte e Online</p>
-            <p>💻 Acesse nosso site e monte sua viagem dos sonhos hoje mesmo!</p>
-            <br><br>
-            <p>✨ Sua Próxima História Começa Aqui. Vamos Juntos?
-                (Chamada final com botão CTA: "Quero Viajar Agora!")</p>
+            <div class="info-contato">
+                <h2>📩 Fale Conosco</h2>
+                <p>Quer planejar sua próxima aventura? Entre em contato agora mesmo!</p>
+                <p>📞 (11) 1234-5678</p>
+                <p>📧 contato@venturehorizon.com.br</p>
+                <p>📍 São Paulo, Rio de Janeiro, Belo Horizonte e Online</p>
+                <br>
+                <p>💻 Caso queira tirar dúvidas, deixe um comentário abaixo.</p>
+            </div>
+            <form>
+                <h4>Dados de contato</h4>
+                <div class="data-input-container">
+                    <div class="data-input-item">
+                        <label for="name">Nome</label>
+                        <input type="text" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="data-input-item">
+                        <label for="tel">Telefone</label>
+                        <input type="number" placeholder="(xx) 9xxxx-xxxx">
+                    </div>
+                </div>
+                <div class="textarea-container">
+                <textarea 
+                    id="textArea" 
+                    name="message" 
+                    rows="5" 
+                    placeholder="Digite sua mensagem aqui..." 
+                    class="custom-textarea"
+                ></textarea>
+                <div class="textarea-footer">
+                    <span class="char-counter">0/500</span>
+                </div>
+                </div>
+            </form>
+            
         </section>
     </main>
     <footer>
@@ -110,5 +139,6 @@
             <li>Instagram</li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

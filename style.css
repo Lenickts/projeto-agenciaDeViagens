@@ -34,6 +34,9 @@ body {
     padding: 15px;
     background-color: #fff; /* Adicionei cor de fundo para melhor visualização */
 }
+    .logo{
+        border-radius: 50px;
+    }
     .nav ul {
         list-style-type: none;
         display: flex;
@@ -76,6 +79,58 @@ body {
     display: block;
     margin-bottom: 8px;
     }
+
+.textarea-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .custom-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: vertical;
+    min-height: 150px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+
+  .custom-textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
+  }
+
+  .custom-textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .textarea-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+  }
+
+  .char-counter {
+    font-size: 12px;
+    color: #888;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+
+  /* Efeito de hover suave */
+  .custom-textarea:hover {
+    border-color: #b3b3b3;
+  }
 
 footer {
     grid-area: footer;
