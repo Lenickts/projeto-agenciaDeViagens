@@ -78,7 +78,7 @@ body {
         width: 80%;
         align-items: center;
     }
-        .container-section-table h4{
+        .container-section-table h2{
             padding: 20px;
         }
         table{
@@ -87,13 +87,13 @@ body {
             letter-spacing: 1px;
             font-family: var(--fonte-main);
             font-size: 0.9rem;
-            width: 60rem;
-            height: 20rem;
+            width: 50rem;
+            height: 15rem;
         }
             .tabela-cabecalho{
                 background-color: #2b2b2b;
                 color: white;
-                font-size: 20px;
+                font-size: 18px;
             }
             th,td {
             border: 1px solid rgb(160 160 160);
@@ -130,10 +130,49 @@ body {
     margin-bottom: 8px;
     }
 
+.container-section-contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 5px;
+}
+    .info-contato{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+        .info-contato h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 50rem;
+    }
+        form h4{
+            margin-bottom: 10px;
+        }
+        .data-input-container{
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+            .data-input-item{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+                .data-input-item input{
+                    border: none;
+                    padding: 10px;
+                    border-radius: 8px;
+                    background-color: rgb(240,250,245);
+                }
 .textarea-container {
-    position: relative;
     max-width: 600px;
-    margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -186,6 +225,7 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-between;
+    font-family: var(--fonte-Generic);
     padding: 15px;
     background-color: #333; /* Adicionei cor de fundo */
     color: white; /* Cor do texto para contraste */
