@@ -238,7 +238,13 @@ footer {
     }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 844px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        max-width: 844px;
+    }    
     .nav, footer {
         flex-direction: column;
         align-items: center;
@@ -250,4 +256,37 @@ footer {
         align-items: center;
         gap: 10px;
     }
+
+    .container-section{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        width: 80%;
+    }
+    table{
+        width: 10rem;
+        height: 8rem;
+        font-size: 0.8rem;
+    }
+        .tabela-cabecalho{
+            font-size: 12px;
+        }
+
+    #testimonials {
+        max-width: 700px;
+    }
+
+    .container-section-contact{
+        flex-direction: column;
+    }
+        .textarea-container {
+            max-width: 500px;
+        }
+
+    footer ul{
+        flex-direction: row;
+        gap: 5px
+    }
+    
 }
