@@ -88,9 +88,14 @@ body {
     .tabela-container table{
         width: 100%;
         max-width: 100%;
+        border: 2px solid #2b2b2b;
         border-collapse: collapse;
-        background-color: #fff;
         font-size: 14px;
+    }
+    thead{
+        background-color: #2b2b2b;
+        color: white;
+        font-size: 0.9rem;
     }
     .tabela-container th, td {
         border: 1px solid #ccc;
@@ -334,6 +339,9 @@ footer {
         align-items: center;
         gap: 10px;
     }
+        .logo img{
+            width: 200px;
+        }
     .container-section{
         width: 100%;
     }
