@@ -355,3 +355,10 @@ footer {
             text-align: center;
         }
 }
+
+/* CARDS */
+#collections{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
