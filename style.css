@@ -39,6 +39,9 @@ body {
     .logo{
         border-radius: 50px;
     }
+        .logo img{
+            width: 150px;
+        }
     .nav ul {
         list-style-type: none;
         display: flex;
@@ -415,7 +418,10 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-    }    
+    }
+        .logo img{
+            width: 200px;
+        }   
     .nav ul, footer ul {
         align-items: center;
         gap: 40px;
