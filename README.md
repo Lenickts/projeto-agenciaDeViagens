@@ -1,6 +1,16 @@
 # Projeto Agencia de Viagens
-O intuito do projeto é ...
+O intuito do projeto é praticar conceitos essenciais de desenvolvimento web:
 
+✅ Responsividade avançada com media queries
+✅ Layouts flexíveis com CSS Grid & Flexbox
+✅ Unidades relativas (rem, %, vh/vw) para adaptação perfeita
+✅ Design fluido em todos os dispositivos
+
+## Aprendizados:
+
+- ✨ Dominar breakpoints estratégicos
+- ✨ Balancear Grid e Flexbox para layouts complexos
+- ✨ Otimizar imagens para diferentes telas
 
 ### Direitos autorais das imagens
 - [Jailam Rashad](https://unsplash.com/pt-br/fotografias/litoral-sob-o-ceu-Qe58SmRMcH4)
