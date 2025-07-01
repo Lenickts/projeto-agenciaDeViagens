@@ -254,6 +254,10 @@ footer {
         align-items: center;
         gap: 10px;
     }
+    #testimonials{
+        width: 23rem;
+        margin: 0;
+    }
     table{
         width: 10rem;
         height: 8rem;
@@ -262,5 +266,20 @@ footer {
         .tabela-cabecalho{
             font-size: 12px;
         }
-    
+    .container-section-contact{
+        flex-direction: column;
+        padding: 10px;
+        gap: 3px; 
+    }
+    .data-input-container{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    form{
+        width: 23rem;
+    }
+        form h4{
+            text-align: center;
+        }
 }
