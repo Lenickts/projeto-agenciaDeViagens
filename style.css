@@ -39,6 +39,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000
 }
     .logo{
         border-radius: 50px;
@@ -337,7 +338,10 @@ footer {
     body{
         display: flex;
         flex-direction: column; 
-    }   
+    }
+    .nav{
+        position: static;
+    } 
     .nav, footer {
         flex-direction: column;
         align-items: center;
