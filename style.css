@@ -46,6 +46,14 @@ body {
         padding: 5px;
         align-items: center;
     }
+    .nav a{
+        color: #333;
+        font-weight: 600;
+    }
+        .nav a:hover{
+            font-size: 25px;
+            transition: all 0.5s ease;
+        }
 
 .main-container {
     grid-area: main;
@@ -236,6 +244,14 @@ footer {
         gap: 30px;
         padding: 5px;
     }
+    footer a{
+        color: white;
+        font-weight: 600;
+    }
+        footer a:hover{
+            font-size: 20px;
+            transition: all 0.5s ease;
+        }
 
 /* Responsividade */
 @media (min-width: 300px) and (max-width: 767px) {
@@ -305,7 +321,9 @@ footer {
     }    
     .nav ul, footer ul {
         align-items: center;
-        gap: 10px;
+        gap: 40px;
+        padding: 5px;
+        align-items: center;
     }
     .container-section{
         width: 100%;
