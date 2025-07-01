@@ -1,10 +1,10 @@
 # Projeto Agencia de Viagens
 O intuito do projeto é praticar conceitos essenciais de desenvolvimento web:
 
-✅ Responsividade avançada com media queries
-✅ Layouts flexíveis com CSS Grid & Flexbox
-✅ Unidades relativas (rem, %, vh/vw) para adaptação perfeita
-✅ Design fluido em todos os dispositivos
+- ✅ Responsividade avançada com media queries
+- ✅ Layouts flexíveis com CSS Grid & Flexbox
+- ✅ Unidades relativas (rem, %, vh/vw) para adaptação perfeita
+- ✅ Design fluido em todos os dispositivos
 
 ## Aprendizados:
 
