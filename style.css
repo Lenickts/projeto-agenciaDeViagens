@@ -55,6 +55,7 @@ body {
             transition: all 0.5s ease;
         }
 
+/* CONTEUDO PRINCIPAL */
 .main-container {
     grid-area: main;
     background-color: #F8F8FF;
@@ -78,6 +79,70 @@ body {
     }
         .container-section ul{
             padding-left: 50px;
+        }
+
+/* Tabela de preços */
+.tabela-container{
+    overflow-x: auto;
+}
+    .tabela-container table{
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        font-size: 14px;
+    }
+    .tabela-container th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+        min-width: 70px;
+    }
+/* CARDS */
+#galeria{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+    #collections h4{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .collections-itens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        border: 4px solid #333;
+        border-radius: 8px;
+        background-color: #333;
+    }
+    .img-card img {
+        border-radius: 4px 4px 8px 8px;
+    }
+    .legenda {
+        font-size: 0.85rem;
+        text-align: center;
+        margin-top: 0.5rem;
+        background-color: #A9A9A9;
+        padding: 5px;
+        border-radius: 8px;
+        font-family: var(--fonte-robo);
+        font-size: 13px
+    }
+        .legenda a{
+            color: white;
+            font-weight: 500;
+        }
+        .legenda a:hover{
+            font-size: 15px;
+            font-style: oblique;
+            transition: all 0.5s ease;
+            text-decoration: underline;
         }
     .container-section-table{
         display: flex;
@@ -275,6 +340,28 @@ footer {
         .container-section ul{
             padding-left: 30px;
         }
+
+    /* Tabela de preços */
+        table {
+        font-size: 12px;
+        }
+
+        th, td {
+            padding: 6px;
+        }
+
+    /* Galeria */
+    .img-card{
+        width: 300px;
+    }
+    .img-card img {
+        border-radius: 4px 4px 8px 8px;
+    }
+    .collections-itens .img-card img{
+        width: 300px;
+    } 
+
+    /* Depoimentos */
     #testimonials{
         width: 23rem;
         margin: 0;
@@ -283,6 +370,7 @@ footer {
             font-size: 1.2em;
             text-align: center;
         }
+    /* Viagens mais vendidas */
     table{
         width: 10rem;
         height: 8rem;
@@ -291,6 +379,7 @@ footer {
         .tabela-cabecalho{
             font-size: 12px;
         }
+    /* Contato */
     .container-section-contact{
         flex-direction: column;
         padding: 10px;
@@ -306,7 +395,7 @@ footer {
     }
         form h4{
             text-align: center;
-        }
+        }      
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -354,11 +443,8 @@ footer {
         form h4{
             text-align: center;
         }
-}
 
-/* CARDS */
-#collections{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    #galeria{
+        justify-content: center;
+    }
 }
