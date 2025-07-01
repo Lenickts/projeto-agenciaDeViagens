@@ -238,7 +238,7 @@ footer {
     }
 
 /* Responsividade */
-@media (min-width: 300px) and (max-width: 844px) {
+@media (min-width: 300px) and (max-width: 767px) {
     body{
         display: flex;
         flex-direction: column; 
@@ -247,17 +247,26 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-    }
-    
+    }    
     .nav ul, footer ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+    .container-section{
+        width: 100%;
+    }
+        .container-section ul{
+            padding-left: 30px;
+        }
     #testimonials{
         width: 23rem;
         margin: 0;
     }
+        #testimonials h2 {
+            font-size: 1.2em;
+            text-align: center;
+        }
     table{
         width: 10rem;
         height: 8rem;
@@ -278,6 +287,51 @@ footer {
     }
     form{
         width: 23rem;
+    }
+        form h4{
+            text-align: center;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column; 
+    }   
+    .nav, footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }    
+    .nav ul, footer ul {
+        align-items: center;
+        gap: 10px;
+    }
+    .container-section{
+        width: 100%;
+    }
+        .container-section ul{
+            padding-left: 30px;
+        }
+    table{
+        width: 40rem;
+        height: 13rem;
+        font-size: 0.9rem;
+    }
+        .tabela-cabecalho{
+            font-size: 1rem;
+        }
+    .container-section-contact{
+        flex-direction: column;
+        padding: 10px;
+        gap: 3px; 
+    }
+    .data-input-container{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    form{
+        width: 40rem;
     }
         form h4{
             text-align: center;
